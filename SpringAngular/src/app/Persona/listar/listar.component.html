@@ -1,1 +1,44 @@
-<p>listar works!</p>
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Personas</h3>
+        </div>
+        <div class="card-body">
+            <div class="table table-hover">
+                <thead>
+                    <tr class="text-center">
+                        <th>ID</th>
+                        <th>NOMBRES</th>
+                        <th>APELLIDO</th>
+                        <th>CORREO</th>
+                        <th>AFP</th>
+                        <th>PENSION</th>
+                        <th>EXCLUSION</th>
+                        <th>CONTRIBUCION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let persona of personas" class="text-center">
+                        <td>{{persona.id}}</td>
+                        <td>{{persona.nombre}}</td>
+                        <td>{{persona.apellido}}</td>
+                        <td>{{persona.correo}}</td>
+                        <td>{{persona.afp}}</td>
+                        <td>{{persona.pension}}</td>
+                        <td>{{persona.exclusion}}</td>
+                        <td>{{persona.contribucion}}</td>
+                   
+                    </tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    
+                    <td>{{ total | currency }}</td>
+                </tbody>
+            </div>
+        </div>
+    </div>
+</div>

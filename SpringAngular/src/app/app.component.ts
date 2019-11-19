@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'SpringAngular';
+  title = 'Preonline';
 
   constructor(private router:Router){
 
@@ -17,7 +17,5 @@ export class AppComponent {
     this.router.navigate(["listar"])
   }
 
-  Nuevo(){
-    this.router.navigate(["add"])
-  }
+  
 }
